@@ -252,7 +252,7 @@ nav {
     align-items: center;
     padding: 8px 16px;
     border: 1px solid var(--light-gray);
-    transition: backround-color var(--transition-dur-and-func);
+    transition: background-color var(--transition-dur-and-func);
     
 }
 .button-accent:hover, .button-accent:focus, .button-usual:hover, .button-usual:focus  {
@@ -427,6 +427,18 @@ nav {
 .potfolio-main {
     padding-bottom: 120px;
 }
+.portfolio-title {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}
 .portfolio-text {
     padding-left: 16px;
     padding-bottom: 32px;
@@ -434,7 +446,6 @@ nav {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    overflow:hidden;
     text-decoration: none;
 }
 .portfolio-item:nth-child(3n+3) {
@@ -715,6 +726,7 @@ footer {
     background-color: var(--light-gray);
     padding: 0;
     border-radius: 50%;
+    border: none;
     transition: border-color var(--transition-dur-and-func);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-color: var(--grey-text);
@@ -785,7 +797,7 @@ footer {
     outline: none;
     border: 1px solid var(--blue-accent);
 }
-.info-user:focus+.form-icon:focus {
+.info-user:focus + .form-icon:focus {
     fill: var(--blue-accent);
 }
 .info-active {
@@ -796,6 +808,7 @@ footer {
     top: 50%;
     left: 19px;
     transform: translate(0, -50%);
+    fill: #000000;
     transition: fill var(--transition-dur-and-func);
 }
 
@@ -847,7 +860,28 @@ footer {
 .checkbox-label {
     display: flex;
     align-items: center;
+
 }
+/* .checkbox-hidden {
+    -webkit-appearance: none;
+    appearance:none;
+    position: absolute;
+} */
+/* .checkbox-hidden:checked + .checkbox-icon {
+    fill: var(--blue-accent);
+    background-image: url(../img/main/Vectorgalochka.svg);
+} */
+/* .checkbox-icon {
+    position: absolute;
+    /* width: 16px;
+    height: 16px; */
+    /* padding-left: -24px; */
+    /* background-image: url(../img/main/Checkboxcheck.svg); */
+/* } */ 
+/* .check-icon {
+    fill: var(--white);
+    background-color: var(--grey-text);
+} */
 .checkbox-text {
     display: flex;
     align-items: center;
