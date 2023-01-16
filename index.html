@@ -387,7 +387,7 @@
             </button>
             <form class="form">
                 <p class="form-title">Leave your contacts and we will call you back</p>
-                <dive class="input-modal">
+                <div class="input-modal">
                     <label class="label">
                         <span class="form-style">Name</span>
                         <span class="input-wrapper">
@@ -423,21 +423,30 @@
                         name="Comment" 
                         placeholder="Text input"></textarea>
                      </label>
-                    <label class="checkbox-label">
-                        <input 
-                        type="checkbox" 
-                        name="policy-accept-checkbox" 
-                        class="checkbox-hidden" />
+                     <div class="privacy">
+                        <!-- <label class="checkbox-label"> -->
+                            <input type="checkbox" name="policy-accept-checkbox" id="mail_send" class="privacy-input" value="yes"/>
+                            <label for="mail_send">
+                                <span class="checkbox-text">
+                                    I accept the terms and conditions of the&nbsp;
+                                    <a href="#" class="policy-link">Privacy Policy</a>
+                                </span>
+                            </label>
+                            <!-- <span class="checkbox-text">
+                                I accept the terms and conditions of the&nbsp; -->
+                            <!-- <a href="#" class="policy-link">Privacy Policy</a> -->
+                            <!-- </span> -->
+                        <!-- </label> -->
+
+                     </div>
+                    
+            
                         <!-- <span class=checkbox-icon>
                             <svg class="check-icon" width="16" height="16">
                                 <use href="./img/sprite/symbol-defs.svg#icon-Checkboxcheck"></use>
                             </svg>
                         </span> -->
-                        <span class="checkbox-text">
-                            I accept the terms and conditions of the&nbsp;
-                            <a href="#" class="policy-link">Privacy Policy</a>
-                        </span>
-                    </label>
+                        
                     <button type="submit" class="form-button">Send</button>
                 </dive>
             </form>
